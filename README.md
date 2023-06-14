@@ -58,33 +58,3 @@ To stop the Docker containers, press `Ctrl+C` in the terminal window where you s
 ```
 docker-compose down
 ```
-
-## Running without Docker
-
-Before running without Docker kindly make sure that Composer is installed and your MySQL database server is running on `PORT 3306`
-
-1. Clone this repository to your local machine:
-
-```
-git clone https://github.com/amatsui0725/innoscripta_backend.git
-
-cd innoscripta/backend
-```
-
-2. Run the Laravel project by below commands
-
-```
-composer install
-
-cp .env.example .env
-
-php artisan key:generate
-
-php artisan migrate
-
-php artisan add-news
-
-php artisan serve
-```
-
-The The Laravel backend project will be run on `PORT 8000`
