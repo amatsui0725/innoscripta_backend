@@ -1,9 +1,5 @@
-# News aggregator Backend App - Laravel
-This project is for backend apis with Laravel for New aggregator app.
-
-## Prerequisites
-
-### Before you start, make sure you have the following tools installed:
+# Innoscripta Backend App - Laravel
+### Tools required
 
 -   Docker Engine 22.0.0 or later
 
@@ -14,7 +10,7 @@ This project is for backend apis with Laravel for New aggregator app.
 1. Clone this repository to your local machine:
 
 ```
-git clone https://github.com/johnfumio/innoscripta_backend.git
+git clone https://github.com/amatsui0725/innoscripta_backend.git
 ```
 
 2. Go to the project directory:
@@ -70,7 +66,7 @@ Before running without Docker kindly make sure that Composer is installed and yo
 1. Clone this repository to your local machine:
 
 ```
-git clone https://github.com/johnfumio/innoscripta_backend.git
+git clone https://github.com/amatsui0725/innoscripta_backend.git
 
 cd innoscripta/backend
 ```
@@ -92,35 +88,3 @@ php artisan serve
 ```
 
 The The Laravel backend project will be run on `PORT 8000`
-
-
-# Development work flow
-This Application is for the backend side of news aggregator.
-1. DB - MariaDB
-    I created three tables - Users, Settings, Articles
-
-    Users - storing user info - Id, Name, Email, Created Date
-
-    Settings - storing user's preference info - Type, Name
-        (ex: I like `author` called `Will Millar` => Type = `author` Name = `Will Millar` )
-
-    Articles - storing the news info - Id, Source Name, Source, Author, Title, Category, Description, URL, Image, Created Date
-
-2. Laravel
-    - Auth Controller
-
-        Login and Register
-
-        These apis are public means everyone can access and will create a new user and send the token for the logged in users.
-
-    - Articles Controller
-
-        These are the private apis means only authorized users can access.
-
-        - Articles
-
-            You can fetch the articles filtered or searched by title, authors, categories, and sources.
-
-        - Settings
-            CRUD operations for user settings
-            You can add, delete, update, and fetch the user settings with these apis.
